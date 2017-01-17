@@ -1,0 +1,8 @@
+//Texts
+
+@mixin typography ($typo, $size, $color){
+	font-family: $typo;
+	font-size: $size;
+	color: $color;
+}
+

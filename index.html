@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Cómo se Recicla</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="pd">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m8 l8">
+					<h1 class="center">¿Cómo se recicla?</h1>
+				</div>
+				<div class="col s12 m4 l4">
+					<form>
+						<div class="input-field">
+							<input type="search" id="search" required>
+							<label for="search"><i class="material-icons buscar">search</i></label>
+							<i class="material-icons close">close</i>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="recent" class="pd">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<h2 class="center">Recientes</h2>
+				</div>
+			</div>
+			<div class="row" id="suggest">
+				<div class="col s4 m3 l3">
+					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+				</div>
+				<div class="col s4 m3 l3">
+					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+				</div>
+				<div class="col s4 m3 l3">
+					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/template" id="product-template">
+		<div class="container">
+			<a href="info.html#1">
+				<h1 class="center">:name</h1>
+				<p class="center">:description</p>
+				<img src=":image" alt="">
+			</a>
+		</div>			
+	</script>
+</body>
+</html>

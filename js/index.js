@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+
 	$("#search").keyup(function(event) {
 		$.ajax({
 			url: 'http://162.243.136.119:8080/search.json',
@@ -6,9 +8,11 @@ $(document).ready(function(){
 			success: function(products){
 				console.log(products);
 				$("#recent").html(" ");
+
 				products.forEach(function(product){
 					$("#recent").append(template("product-template", product));
 					$("#suggest").addClass('hidden');
+					$("#agregar1").removeClass('hide');
 				});
 			}
 		})

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
     $('#file-input').change(function(e) {
         addImage(e);

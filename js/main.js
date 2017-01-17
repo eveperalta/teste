@@ -1,16 +1,27 @@
 //input-file
 $(document).ready(function(){
-	$("#file-input").on("change", function (evento){
-	//recuperar archivo subido
-	var archivo= $ (this)[0].files[0];
-	//crear file reader, es un objeto de JS para leer archivos
-	var reader = new FileReader();
-	//decrile al fr que hacer cuando termine de cargar
-	reader.onload = function(efr){
-		$("#file-input img").attr("src", efr.target.result);
-	}
-	//cargar la imagen
-	reader.readAsDataURL(archivo);
 
-	});
-})
+ $(function() {
+  $('#file-input').change(function(e) {
+      addImage(e); 
+     });
+
+     function addImage(e){
+      var file = e.target.files[0],
+      imageType = /image.*/;
+    
+      if (!file.type.match(imageType))
+       return;
+  
+      var reader = new FileReader();
+      reader.onload = fileOnload;
+      reader.readAsDataURL(file);
+     }
+  
+     function fileOnload(e) {
+      var result=e.target.result;
+      $('#imgSalida').attr("src",result);
+     }
+    });
+
+});

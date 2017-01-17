@@ -6380,8 +6380,20 @@ header {
   font-size: 2rem;
   color: #212121; }
 
+.btn-info {
+  background-color: #FFEB3B;
+  color: #0097A7;
+  margin-top: 35px; }
+
 #map-canvas {
   width: 100%;
   height: 300px; }
+
+.boton-resultados {
+  margin: 5%; }
+  .boton-resultados .btn, .boton-resultados .btn-large {
+    width: 250px;
+    background-color: #0097A7;
+    color: #FFEB3B; }
 
 /*# sourceMappingURL=main.css.map */

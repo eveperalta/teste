@@ -36,3 +36,18 @@ header {
     height: 300px;
     
 }
+
+.center-name {
+	font-size:20px;
+}
+.box {
+	@include bordecaja($accent-color);
+}
+.coke {
+	margin-top: -10%;
+	padding-top: 20%;
+}	
+
+.center-bottle {
+	font-size: 20px;
+}

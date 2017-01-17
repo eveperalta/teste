@@ -6384,4 +6384,17 @@ header {
   width: 100%;
   height: 300px; }
 
+.center-name {
+  font-size: 20px; }
+
+.box {
+  border: 2px solid #FFEB3B; }
+
+.coke {
+  margin-top: -10%;
+  padding-top: 20%; }
+
+.center-bottle {
+  font-size: 20px; }
+
 /*# sourceMappingURL=main.css.map */

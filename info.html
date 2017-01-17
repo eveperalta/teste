@@ -30,7 +30,7 @@
 		</div>
 			
 		</div>
-	</div>
+	
 </section>
 
 
@@ -40,14 +40,20 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDjhLZdzD1Knb8c128oNAJ8cwO6lqYieu8"></script>
 	<script src="js/info.js"></script>
 	<script type="text/template" id="product-template2">
-		<div class="container">
-			<a href="#">
-				<h4 class="center">:name</h4>
-				<p class="center">:description</p>
-				<p class="center">:instructions</p>
-				<img src=":image" alt="" height="200px">
-			</a>
-		</div>			
+		<div class="container ">
+			<div class="row box">
+				<div class="col s6 m12">
+					<a href="#">
+						<h4 class="center-bottle">:name</h4>
+						<p class="center caracteristicas">:description</p>
+						<p class="center recomendar">:instructions</p></a>
+					</div>
+					<div class="col s6 m6">
+						<a href="#"><img class="coke" src=":image" alt="" height="150px">
+						</a>
+					</div>
+				</div>
+			</div>			
 	</script>
 </body>
 </html>

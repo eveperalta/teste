@@ -26,3 +26,24 @@ window.template = function(templateName, context){
 	}
 	return $(html);
 };
+
+//modal
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+    $('#modal1').modal('open');
+    $('#modal1').modal('close');
+    $('.modal').modal({
+    	dismissible: true, 
+    	opacity: .5,
+    	in_duration: 300, 
+    	out_duration: 200, 
+    	starting_top: '4%', 
+    	ending_top: '10%', 
+    	ready: function(modal, trigger) { 
+    		console.log(modal, trigger);
+    	},
+    }
+    );
+});
+//modal

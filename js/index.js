@@ -43,7 +43,6 @@ $(document).ready(function(){
     	ready: function(modal, trigger) { 
     		console.log(modal, trigger);
     	},
-    }
-    );
+    });
 });
 //modal

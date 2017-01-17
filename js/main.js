@@ -12,5 +12,5 @@ $(document).ready(function(){
 	//cargar la imagen
 	reader.readAsDataURL(archivo);
 
-});
+	});
 })

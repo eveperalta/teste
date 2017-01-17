@@ -1,6 +1,11 @@
-
-.pd {
+html {
+	margin: 0 auto;
+}
+.pd-5 {
 	padding: 5% 0;
+}
+.pd-2 {
+	padding: 2% 0;
 }
 
 //Header
@@ -43,7 +48,6 @@ header {
     
 }
 
-
 .center-name {
 	font-size:20px;
 }
@@ -57,7 +61,7 @@ header {
 
 .center-bottle {
 	font-size: 20px;
-
+}
 .boton-resultados{
 	margin:5%;
 	.btn{
@@ -65,5 +69,4 @@ header {
 		background-color:$primary-color-dark;
 		color:$accent-color;
 	}
-
 }

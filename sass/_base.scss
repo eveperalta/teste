@@ -43,6 +43,21 @@ header {
     
 }
 
+
+.center-name {
+	font-size:20px;
+}
+.box {
+	@include bordecaja($accent-color);
+}
+.coke {
+	margin-top: -10%;
+	padding-top: 20%;
+}	
+
+.center-bottle {
+	font-size: 20px;
+
 .boton-resultados{
 	margin:5%;
 	.btn{
@@ -50,4 +65,5 @@ header {
 		background-color:$primary-color-dark;
 		color:$accent-color;
 	}
+
 }

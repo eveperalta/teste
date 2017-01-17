@@ -6,3 +6,6 @@
 	color: $color;
 }
 
+@mixin bordecaja ($border){
+	border: 2px solid $accent-color;
+}

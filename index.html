@@ -3,12 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Cómo se Recicla</title>
+	<title>¿Cómo se recicla? - Inicio</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="pd">
+	<header class="pd-5">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m8 l8">
@@ -26,22 +26,22 @@
 			</div>
 		</div>
 	</header>
-	<section id="recent" class="pd">
+	<section id="recent">
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
-					<h2 class="center">Recientes</h2>
+					<h2 class="center pd-2">Recientes</h2>
 				</div>
 			</div>
-			<div class="row" id="suggest">
-				<div class="col s4 m3 l3">
-					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+			<div class="row">
+				<div class="col s12 m4">
+					<img class="responsive-img center" src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
 				</div>
-				<div class="col s4 m3 l3">
-					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+				<div class="col s12 m4">
+					<img class="responsive-img center" src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
 				</div>
-				<div class="col s4 m3 l3">
-					<img src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
+				<div class="col s12 m4">
+					<img class="responsive-img center" src="img/simbolo-triangular-de-reciclaje-de-rotacion-tres-flechas_318-65546.jpg" alt="" width="50%">
 				</div>
 			</div>
 		</div>
@@ -52,26 +52,18 @@
 	<script src="js/index.js"></script>
 	<script type="text/template" id="product-template">
 		<div class="container">
-
 			<div class="row box">
 				<div class="col s6 m6">
-					<a href="info.html#1">
-						<h1 class="center-name">:name</h1>
-						<p class="center description">:description</p></a>
-					</div>	
-					<div class="col s6 m6" id="charge">
-						<a href="info.html#1"><img src=":image" alt="" height="150px"></a>
-					</div>
+					<a href="info.html#:id">
+						<h4 class="center">:name</h4>
+						<p class="center">:description</p>
+					</a>
+				</div>	
+				<div class="col s6 m6" id="charge">
+					<a href="info.html#:id"><img src=":image" alt="" height="150px"></a>
 				</div>
-			</div>			
-
-			<a href="info.html#:id">
-				<h1 class="center">:name</h1>
-				<p class="center">:description</p>
-				<img src=":image" alt="">
-			</a>
-		</div>			
-
+			</div>
+		</div>					
 	</script>
 </body>
 </html>

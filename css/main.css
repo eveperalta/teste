@@ -6389,13 +6389,6 @@ header {
   width: 100%;
   height: 600px; }
 
-.boton-resultados {
-  margin: 5%; }
-  .boton-resultados .btn, .boton-resultados .btn-large {
-    width: 250px;
-    background-color: #0097A7;
-    color: #FFEB3B; }
-
 .center-name {
   font-size: 20px; }
 
@@ -6408,5 +6401,12 @@ header {
 
 .center-bottle {
   font-size: 20px; }
+
+.boton-resultados {
+  margin: 5%; }
+  .boton-resultados .btn, .boton-resultados .btn-large {
+    width: 250px;
+    background-color: #0097A7;
+    color: #FFEB3B; }
 
 /*# sourceMappingURL=main.css.map */

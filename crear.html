@@ -20,20 +20,20 @@
 </header>
 <div class="container">
  	<div class="row">
-    <form class="col s12 m12 l12">
+    <form class="col s12 m12 l12" method="post" accept-charset="UTF-8" action="http://162.243.136.119:8080/products" enctype="multipart/form-data">
     	<h5 class="center">Agregar Nuevo</h5>
       <div class="row">
         <div class="input-field col s12 m12 l12" >
           <label for="producto">Producto</label>
-          <input id="producto" type="text" class="validate" required>
+          <input id="producto" type="text" class="validate" name="product[name]" required>
         </div>
         <div class="input-field col s12 m12 l12">
           <label for="textarea1">Descripcion del Producto</label>
-          <textarea id="textarea1" class="materialize-textarea" required></textarea>
+          <textarea id="textarea1" class="materialize-textarea" name="product[description]" required></textarea>
         </div>
        <div class="input-field col s12 m12 l12">
           <label for="textarea2">Instrucciones para reciclaje</label>
-          <textarea id="textarea2" class="materialize-textarea" required></textarea>
+          <textarea id="textarea2" class="materialize-textarea" name="product[instructions]" required></textarea>
         </div> 
       </div>
     </form>
@@ -45,7 +45,7 @@
 </div>
 <div class="row">
 	<div class="col s4 m4 l4">
-		<input name="file-input" id="file-input" type="file" />
+		<input name="file-input" id="file-input" name="file" type="file" />
 		<br />
 		<img id="imgSalida" width="50%" height="100px" src="" />
 	</div>
@@ -54,29 +54,9 @@
 		<div class="col s6 m6 l6">
 			<h2>Materiales</h2>
 			<form action="#">
-				<p>
+				  <p>
 						<input type="checkbox" class="filled-in" id="papel"  />
 						<label for="papel">Papel</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="carton" />
-						<label for="carton">Cartón</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="metal"  />
-						<label for="metal">Metal</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="pet"  />
-						<label for="pet">1-PET</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="hdpe"  />
-						<label for="hdpe">2-HDPE</label>
-					</p>
-					<p>
-						<input type="checkbox" class="filled-in" id="pvc"  />
-						<label for="pvc">3-PVC</label>
 					</p>
 					<div class="row">
 						<div class="col s4 m4">
@@ -90,5 +70,10 @@
  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>	
 	<script src="js/main.js"></script>
+	<script type="text/template" id="checkbox-template">
+		<div class="row">
+			<p>:description </p>
+		</div>
+	</script>
 </body>
 </html>

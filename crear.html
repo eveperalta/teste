@@ -23,24 +23,24 @@
     <form class="col s12 m12 l12">
     	<h5 class="center">Agregar Nuevo</h5>
       <div class="row">
-        <div class="input-field col s12 m12 l12" require>
-          <input id="Producto" type="text" class="validate">
+        <div class="input-field col s12 m12 l12" >
           <label for="producto">Producto</label>
+          <input id="producto" type="text" class="validate" required>
         </div>
         <div class="input-field col s12 m12 l12">
-          <textarea id="textarea1" class="materialize-textarea" require></textarea>
           <label for="textarea1">Descripcion del Producto</label>
+          <textarea id="textarea1" class="materialize-textarea" required></textarea>
         </div>
        <div class="input-field col s12 m12 l12">
-          <textarea id="textarea2" class="materialize-textarea" require></textarea>
           <label for="textarea2">Instrucciones para reciclaje</label>
+          <textarea id="textarea2" class="materialize-textarea" required></textarea>
         </div> 
       </div>
     </form>
   </div>
 <div class="row">
 	<div class="col s12 m12 l12">
-		<h5>Imágen</h5>
+		<h5>Imagen</h5>
 	</div>
 </div>
 <div class="row">
@@ -57,7 +57,6 @@
 				<p>
 						<input type="checkbox" class="filled-in" id="papel"  />
 						<label for="papel">Papel</label>
-
 					</p>
 					<p>
 						<input type="checkbox" class="filled-in" id="carton" />
@@ -79,15 +78,14 @@
 						<input type="checkbox" class="filled-in" id="pvc"  />
 						<label for="pvc">3-PVC</label>
 					</p>
-			</form>
-			<br>
-		<div class="row">
-				<div class="col s4 m4">
-					<a href="materiales.html" class="btn flat">Agregar</a>
-				</div>
+					<div class="row">
+						<div class="col s4 m4">
+							<button class="btn flat" id="agregar">Agregar</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
-	</div>
 </div><!--container -->
  	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>	
